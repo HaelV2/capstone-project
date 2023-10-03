@@ -7,15 +7,6 @@ Norby Inc is a multinational company that deals in household items. The business
 
 The goal was to gather and analyse data related to orders, reviews, and shipments to help Norby Inc. make informed decisions.
 
-## Data Modelling
-![](model.png)
-
-The attached ER table has been provided. It shows the relationship between the table.
-The Order table is the fact table.The product table,dim_customer table,calender date table,review table and shipment table are all connected to the fact table.
-
-This is a Star schema.
-
-
 ## Libraries
 We used several tools to accomplish our tasks, 
 including pandas (a data manipulation library), io (for handling input and output streams), sqlalchemy (for database connection), time (for time-related operations), and boto3 (to interact with Amazon S3, where data was stored).
@@ -40,8 +31,6 @@ Our main job was to answer specific questions using the data. Here is what we fo
 
 #### Requirement 1: Total Number of Orders Placed on Public Holidays Every Month
 We created SQL queries (special code for databases) to count how many orders were made on public holidays each month over the past year. This helps Norby Inc. understand customer behavior during holidays.
-
-![](orders.png)
 
 #### Requirement 2: Total Number of Late Shipments and Undelivered Shipments
 Using more SQL queries, we figured out how many shipments were late (took too long to arrive) and how many shipments never arrived at all. This is crucial for measuring the quality of Norby Inc.'s delivery service.
